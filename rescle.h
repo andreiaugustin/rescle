@@ -145,6 +145,7 @@ namespace rescle {
 		bool SetApplicationManifest(const WCHAR* value);
 		bool IsApplicationManifestSet();
 		bool Commit();
+		const WCHAR* GetApplicationManifest(); // andreiaugustin
 
 	private:
 		bool SerializeStringTable(const StringValues& values, UINT blockId, std::vector<char>* out);

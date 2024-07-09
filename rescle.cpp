@@ -598,6 +598,12 @@ bool ResourceUpdater::ChangeRcData(UINT id, const WCHAR* pathToResource) {
 	return true;
 }
 
+// andreiaugustin START
+const WCHAR* ResourceUpdater::GetApplicationManifest() {
+	return manifestString_.c_str();
+}
+// andreiaugustin END
+
 const WCHAR* ResourceUpdater::GetString(WORD languageId, UINT id) {
 	StringTable& table = stringTableMap_[languageId];
 
